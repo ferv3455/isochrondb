@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package isochrondb;
+
+option go_package = "github.com/ferv3455/isochrondb/internal/common/genproto/api";
+
+service IsochronDB {
+    rpc Hello (HelloRequest) returns (HelloResponse) {}
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloResponse {
+    string message = 1;
+}
